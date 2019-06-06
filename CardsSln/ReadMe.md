@@ -1,11 +1,8 @@
 # Cards Interview Question
 
------------
 ## Exercise 2
-------------
 
-Write some code that will evaluate a poker hand and determine its
-rank.
+Write some code that will evaluate a poker hand and determine its rank.
 Example:
 * Hand: Ah As 10c 7d 6s (Pair of Aces)
 * Hand: Kh Kc 3s 3h 2d (2 Pair)
