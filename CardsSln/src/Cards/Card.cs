@@ -4,8 +4,8 @@ namespace Cards
 {
     public interface ICard
     {
-        public Suit Suit { get; set; }
-        public int Rank { get; set; }
+        Suit Suit { get; set; }
+        int Rank { get; set; }
     }
 
     public enum Suit

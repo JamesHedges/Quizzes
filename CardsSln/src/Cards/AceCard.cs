@@ -1,13 +1,15 @@
+using System;
+
 namespace Cards
 {
     public class AceCard : ICard
     {
-        public Ace()
+        public AceCard()
         {
             AceHigh = true;
         }
 
-        public Suid Suit { get; set; }
+        public Suit Suit { get; set; }
         public int Rank 
         { 
             get
