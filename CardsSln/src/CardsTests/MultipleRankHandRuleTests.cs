@@ -7,7 +7,7 @@ using Cards.Rules;
 
 namespace CardsTests
 {
-    public class MultipleRankHandRuleTests
+    public class HasMultipleRankHandRuleTests
     {
         [Fact]
         public void Hand_WithPair_EvalTrue()
@@ -19,7 +19,24 @@ namespace CardsTests
             hand.Add(new Card(Suit.Club, 4));
             hand.Add(new Card(Suit.Spade, 5));
 
-            ICardHandRule rule = new MultipleRankHandRule();
+            ICardHandRule rule = new HasMultipleRankHandRule();
+
+            var result = rule.Eval(hand);
+
+            result.Should().BeTrue();
+        }
+
+        [Fact]
+        public void Hand_With3OrKind_EvalTrue()
+        {
+            IHand hand = new PokerHand();
+            hand.Add(new Card(Suit.Heart, 2));
+            hand.Add(new Card(Suit.Diamond, 2));
+            hand.Add(new Card(Suit.Spade, 3));
+            hand.Add(new Card(Suit.Club, 4));
+            hand.Add(new Card(Suit.Spade, 2));
+
+            ICardHandRule rule = new HasMultipleRankHandRule();
 
             var result = rule.Eval(hand);
 
@@ -36,7 +53,7 @@ namespace CardsTests
             hand.Add(new Card(Suit.Club, 4));
             hand.Add(new Card(Suit.Spade, 5));
 
-            ICardHandRule rule = new MultipleRankHandRule();
+            ICardHandRule rule = new HasMultipleRankHandRule();
 
             var result = rule.Eval(hand);
 

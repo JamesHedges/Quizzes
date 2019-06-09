@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Cards.Rules
 {
-    public class MultipleRankHandRule : ICardHandRule
+    public class HasMultipleRankHandRule : ICardHandRule
     {
         public bool Eval(IHand hand)
         {
