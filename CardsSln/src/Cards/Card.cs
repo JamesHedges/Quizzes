@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Cards
@@ -24,12 +26,15 @@ namespace Cards
     {
         public Card()
         {
-            
         }
 
+        public Card(Suit suit, int rank)
+        {
+            Suit = suit;
+            Rank = rank;
+        }
 
         public Suit Suit { get; set; }
         public int Rank { get; set; }
     }
-
 }
