@@ -2,7 +2,7 @@ using System;
 
 namespace Cards
 {
-    public interface ITestNode<T> : INode<T>
+    public interface ITestNode<T,R> : INode<T, R>
     {
         T Positive { get; }
         T Negative { get; }

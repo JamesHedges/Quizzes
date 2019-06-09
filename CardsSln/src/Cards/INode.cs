@@ -1,7 +1,7 @@
 namespace Cards
 {
-    public interface INode<T>
+    public interface INode<T, R>
     {
-        bool Eval(T client);
+        R Eval(T client);
     }
 }
