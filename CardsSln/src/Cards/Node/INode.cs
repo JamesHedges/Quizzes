@@ -1,4 +1,4 @@
-namespace Cards
+namespace Cards.Node
 {
     public interface INode<T, R>
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Cards
+namespace Cards.Hand
 {
     public interface IHand
     {

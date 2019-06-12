@@ -1,8 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using Cards.Hand;
 
-namespace Cards
+namespace Cards.Node
 {
-    public class TwoPairDecisionNode : INode<IHand, PokerHandScore>
+    class OnePairDecisionNode
     {
         const int Score = 2;
         const string HandType = "Pair";

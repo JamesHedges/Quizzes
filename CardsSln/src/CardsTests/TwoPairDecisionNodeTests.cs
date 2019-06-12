@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Xunit;
 using FluentAssertions;
 using Cards;
+using Cards.Hand;
+using Cards.Node;
 
 namespace CardsTests
 {
@@ -22,7 +24,7 @@ namespace CardsTests
 
             var result = sut.Eval(hand);
 
-            result.HandType.Should().Be("Pair");
+            result.HandType.Should().Be("Two Pair");
         }
 
         [Fact]
@@ -56,7 +58,7 @@ namespace CardsTests
 
             var result = sut.Eval(hand);
 
-            result.Score.Should().Be(2);
+            result.Score.Should().Be(3);
         }
     }
 }

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Cards
+namespace Cards.Hand
 {
     public class PokerHand : IHand
     {
@@ -14,7 +14,7 @@ namespace Cards
         }
 
         public IEnumerable<ICard> Cards => _cards;
-        
+
         public void Add(ICard card)
         {
             if (_cards.Count > MaxCards)

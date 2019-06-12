@@ -4,6 +4,7 @@ using Xunit;
 using FluentAssertions;
 using Cards;
 using Cards.Rules;
+using Cards.Hand;
 
 namespace CardsTests
 {

@@ -1,4 +1,4 @@
-namespace Cards
+namespace Cards.Hand
 {
     public class PokerHandScore
     {

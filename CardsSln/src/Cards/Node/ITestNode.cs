@@ -1,8 +1,8 @@
 using System;
 
-namespace Cards
+namespace Cards.Node
 {
-    public interface ITestNode<T,R> : INode<T, R>
+    public interface ITestNode<T, R> : INode<T, R>
     {
         T Positive { get; }
         T Negative { get; }
